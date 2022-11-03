@@ -1,17 +1,14 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
 /*Global style */
-
 *{
     margin:0;
     padding:0;
 }
 
 body{
-    font-family: "Inknut Antiqua", sans-serif;
-    height: 100vh;
+    font-family: 'Lato', sans-serif;
     background: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,18 +27,15 @@ body{
 
 /*Style game*/
 #memory-game{
-    border: 2px solid black;
-    margin: 2% 20% 2% 20%;
+    border-radius: 10px;
+    border: 5px solid black;
+    margin: 1% 20% 1% 20%;
     text-align: center;
-}
-
-
-#game-area{
-    background-color: aliceblue;
-    opacity: 0.33;
+    background:rgb(240,248,255, 0.33)
 }
 
 #title{
+    font-size: 2vw;
     font-weight: bold; 
     opacity: 1;
 }
@@ -54,6 +48,7 @@ table{
 /*Apply style to the buttons*/
 
 button{
+    font-family: 'Lato', sans-serif;
     height: 8vw;
     width: 8vw;
     margin: 0.5vw;
@@ -61,8 +56,24 @@ button{
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
+    background:rgb(240,248,255, 0.66)
 }
 
 button:hover{
-    background:hsl(156deg 78% 55%) ;
+    background:rgb(51, 230, 158);
 }
+
+
+
+/*Apply style to the info*/
+
+#info{
+    display:flex;
+    justify-content: space-between;
+}
+
+.player-info{
+    font-size: 2vw;
+    padding: 3%;
+}
+
