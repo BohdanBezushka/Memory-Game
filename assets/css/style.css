@@ -12,6 +12,7 @@
 body{
     font-family: "Inknut Antiqua", sans-serif;
     height: 100vh;
+    background: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(
@@ -27,8 +28,41 @@ body{
 );
 }
 
+/*Style game*/
 #memory-game{
     border: 2px solid black;
-    margin: 5%;
+    margin: 2% 20% 2% 20%;
+    text-align: center;
 }
 
+
+#game-area{
+    background-color: aliceblue;
+    opacity: 0.33;
+}
+
+#title{
+    font-weight: bold; 
+    opacity: 1;
+}
+
+table{
+    text-align: center;
+    margin: auto;
+}
+
+/*Apply style to the buttons*/
+
+button{
+    height: 8vw;
+    width: 8vw;
+    margin: 0.5vw;
+    opacity: 1;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover{
+    background:hsl(156deg 78% 55%) ;
+}
