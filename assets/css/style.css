@@ -14,7 +14,7 @@ body{
     background-repeat: no-repeat;
     background-image: linear-gradient(
     180deg,
-  hsl(197deg 63% 16%) 0%,
+  hsl(197, 63%, 16%) 0%,
   hsl(192deg 100% 18%) 15%,
   hsl(189deg 100% 23%) 30%,
   hsl(185deg 100% 27%) 44%,
@@ -56,6 +56,8 @@ button{
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
+    color: rgb(15, 52, 67);
+    font-size: 4vw;
     background:rgb(240,248,255, 0.66)
 }
 

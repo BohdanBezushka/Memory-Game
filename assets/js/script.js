@@ -2,6 +2,8 @@
 let uncoveredBottoms = 0;
 let buttonOne = null;
 let buttonTwo= null;
+let firsResult= null;
+let secondResult= null;
 
 //Creation of an array that will be used to appear on the buttons.
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8]
@@ -17,8 +19,23 @@ function popUp(id){
     console.log(uncoveredBottoms);
 
     if(uncoveredBottoms == 1){
-        buttonOne =document.getElementById(id);
-        buttonOne.innerHTML= numbers[id];
+        buttonOne = document.getElementById(id);
+        firsResult = numbers[id]
+        buttonOne.innerHTML= firsResult;
+
+        //Lock the first button (the player can see it) to unlock the second button.
+        buttonOne.disabled = true;
+    }else if(uncoveredBottoms == 2){
+        buttonTwo = document.getElementById(id);
+        secondResult = numbers[id];
+        buttonTwo.innerHTML = secondResult;
+
+        /*We lock the second button to increase the number of moves 
+        and the number of hits if the buttons have the same content.
+        */
+        buttonTwo.disabled= true;
     }
+
+    
 
 }
