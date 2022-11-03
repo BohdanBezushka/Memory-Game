@@ -1,0 +1,34 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
+
+/*Global style */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Inknut Antiqua", sans-serif;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+    180deg,
+  hsl(197deg 63% 16%) 0%,
+  hsl(192deg 100% 18%) 15%,
+  hsl(189deg 100% 23%) 30%,
+  hsl(185deg 100% 27%) 44%,
+  hsl(179deg 100% 30%) 58%,
+  hsl(173deg 100% 35%) 72%,
+  hsl(167deg 100% 40%) 86%,
+  hsl(156deg 78% 55%) 100%
+);
+}
+
+#memory-game{
+    border: 2px solid black;
+    margin: 5%;
+}
+
