@@ -4,6 +4,8 @@ let buttonOne = null;
 let buttonTwo= null;
 let firsResult= null;
 let secondResult= null;
+let movements = 0;
+let moves= document.getElementById("moves")
 
 //Creation of an array that will be used to appear on the buttons.
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8]
@@ -34,8 +36,12 @@ function popUp(id){
         and the number of hits if the buttons have the same content.
         */
         buttonTwo.disabled= true;
+
+        /*This part of the code will be used to make the move counter section increase when the player presses a button.
+        Increases a move when the player has pressed two buttons*/
+        movements++;
+        moves.innerHTML = `Moves: ${movements}`;
     }
 
     
-
 }
