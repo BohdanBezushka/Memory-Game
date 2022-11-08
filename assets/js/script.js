@@ -55,6 +55,17 @@ function popUp(id){
             identities++;
             identified.innerHTML = `Identified: ${identities}`;
 
+
+
+            if(identities == 8 && movements == 8){
+                moves.innerHTML = `PERFECT!!!`;
+                identified.innerHTML = 'CHALLENGE COMPLETED!!!';
+
+            }if(identities == 8 && movements > 8){
+                moves.innerHTML = `You could do better.`;
+                identified.innerHTML = 'Challenge completed.';
+            }
+
         //If the buttons are not twins, they will close again.
         }else{
             setTimeout(() => {
