@@ -5,7 +5,9 @@ let buttonTwo= null;
 let firsResult= null;
 let secondResult= null;
 let movements = 0;
-let moves= document.getElementById("moves")
+let moves= document.getElementById("moves");
+let identities = 0;
+let identified= document.getElementById("identified");
 
 //Creation of an array that will be used to appear on the buttons.
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8]
@@ -41,6 +43,19 @@ function popUp(id){
         Increases a move when the player has pressed two buttons*/
         movements++;
         moves.innerHTML = `Moves: ${movements}`;
+        
+        /*This "if" works to compare the first result and the second result to see if they are the same.If the buttons
+        are the same, the variable "uncoveredBottoms" returns to the value 0.*/
+        if(firsResult == secondResult){
+            uncoveredBottoms= 0;
+
+            
+            //If the player has hit the right buttons the "Identified:" counter will increase.
+            identities++;
+            identified.innerHTML = `Identified: ${identities}`;
+        }
+    
+
     }
 
     
