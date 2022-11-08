@@ -29,6 +29,7 @@ function popUp(id){
 
         //Lock the first button (the player can see it) to unlock the second button.
         buttonOne.disabled = true;
+
     }else if(uncoveredBottoms == 2){
         buttonTwo = document.getElementById(id);
         secondResult = numbers[id];
@@ -53,6 +54,18 @@ function popUp(id){
             //If the player has hit the right buttons the "Identified:" counter will increase.
             identities++;
             identified.innerHTML = `Identified: ${identities}`;
+
+        //If the buttons are not twins, they will close again.
+        }else{
+            setTimeout(() => {
+                buttonOne.innerHTML = "";
+                buttonOne.disabled = false;
+                buttonTwo.innerHTML = "";
+                buttonTwo.disabled = false;
+
+                uncoveredBottoms = 0;
+            },0500);
+
         }
     
 
