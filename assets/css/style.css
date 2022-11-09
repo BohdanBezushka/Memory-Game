@@ -1,5 +1,5 @@
 /*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 /*Global style */
 *{
@@ -8,7 +8,7 @@
 }
 
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'VT323', monospace;
     background: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ body{
 }
 
 #title{
-    font-size: 2vw;
+    font-size: 4vw;
     font-weight: bold; 
     opacity: 1;
 }
@@ -48,7 +48,7 @@ table{
 /*Apply style to the buttons*/
 
 button{
-    font-family: 'Lato', sans-serif;
+    font-family: 'VT323', monospace;
     height: 8vw;
     width: 8vw;
     margin: 0.5vw;
@@ -78,4 +78,9 @@ button:hover{
     font-size: 2vw;
     padding: 3%;
 }
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1240px wide and down */
+
 
