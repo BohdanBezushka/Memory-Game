@@ -34,12 +34,6 @@ body{
     background:rgb(240,248,255, 0.33)
 }
 
-
-#main-up{
-    display:flex;
-    justify-content: space-between;
-}
-
 #title{
     font-size: 4vw;
     font-weight: bold; 
@@ -64,7 +58,7 @@ button{
     border-radius: 10px;
     color: rgb(15, 52, 67);
     font-size: 4vw;
-    background:rgb(240,248,255, 0.66)
+    background:hsla(208, 100%, 97%, 0.66);
 }
 
 button:hover{
@@ -83,6 +77,16 @@ button:hover{
 .player-info{
     font-size: 2vw;
     padding: 3%;
+}
+
+#instructions{
+    background: hsla(208, 100%, 97%, 0.66);
+    font-size: 4vw;
+    height: 4vw;
+    width: 4vw;
+    padding: 0%;
+    border: 0.3vw solid black;
+    margin-right: 4vw;
 }
 
 /* Media queries */
