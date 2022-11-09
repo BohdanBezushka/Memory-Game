@@ -34,6 +34,12 @@ body{
     background:rgb(240,248,255, 0.33)
 }
 
+
+#main-up{
+    display:flex;
+    justify-content: space-between;
+}
+
 #title{
     font-size: 4vw;
     font-weight: bold; 

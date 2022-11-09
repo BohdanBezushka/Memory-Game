@@ -11,6 +11,8 @@ let identified= document.getElementById("identified");
 let watch = false;
 let time = document.getElementById("time");
 let timer = 60;
+let startTime = 60;
+let stopWatch = null;
 
 //Creation of an array that will be used to appear on the buttons.
 let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8]
@@ -67,13 +69,24 @@ function popUp(id){
 
 
             //Here we notify the player that he/she has completed the challenge if he/she reaches 8 matches.
-            if(identities === 8 && movements == 8){
-                moves.innerHTML = `PERFECT!!!`;
-                identified.innerHTML = 'CHALLENGE COMPLETED!!!';
 
+            //Perfect result.
+            if(identities === 8 && movements == 8){
+                moves.innerHTML = `PERFECT!`;
+                identified.innerHTML = `CHALLENGE COMPLETED!`;
+                time.innerHTML = `YOU MADE IT IN ${startTime - timer}!`;
+
+                //Stop time:
+                clearInterval(stopWatch);
+
+            //Standard result.
             }if(identities === 8 && movements > 8){
                 moves.innerHTML = `You could do better.`;
-                identified.innerHTML = 'Challenge completed.';
+                identified.innerHTML = `Challenge completed.`;
+                time.innerHTML = `You made it in ${startTime - timer}`;
+
+                //Stop time:
+                clearInterval(stopWatch);
             }
 
         //If the buttons are not twins, they will close again.
@@ -92,8 +105,23 @@ function popUp(id){
 
 //This is the function that makes the time start to count down.
 function sandWatch(){
-    setInterval(() => {
+   stopWatch = setInterval(() => {
         timer --;
         time.innerHTML = `Time: ${timer} sec.`;
+
+        //The "if" will work so that the time stops at 0 and when that happens, all buttons will be displayed and locked.
+        if (timer === 0){
+            clearInterval(stopWatch);
+            seeAllButtons()
+        }
     },1000)
+}
+
+//All buttons are displayed and locked when the time reaches 0.
+function seeAllButtons(){
+    for(let i = 0; i < 16; i++){
+        let buttons = document.getElementById(i);
+        buttons.innerHTML = numbers[i];
+        buttons.disabled = true;
+    }
 }
