@@ -125,9 +125,9 @@ function sandWatch(){
         //The "if" will work so that the time stops at 0 and when that happens, all buttons will be displayed and locked.
         if (timer === 0){
             clearInterval(stopWatch);
-            seeAllButtons()
+            seeAllButtons();
         }
-    },1000)
+    },1000);
 }
 
 //All buttons are displayed and locked when the time reaches 0.
