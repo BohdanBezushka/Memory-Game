@@ -103,6 +103,36 @@ button:hover{
     transform: translate(-50%, -50%);
 }
 
+/*Footer*/
+
+.social-media{
+    text-align: center;
+}
+
+.social-media li{
+    list-style: none;
+    display: inline;
+    font-size: 3.5vw;
+    margin: 1%;
+    padding: 5%;
+}
+
+.social-media i{
+    color:hsl(197, 63%, 16%);
+}
+
+.social-media i:hover{
+    color:rgb(51, 230, 158);
+}
+
+.copyright{
+    text-align:center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+
 /* Media queries */
 
 /* For large to medium screens sizes from 1240px wide and down */

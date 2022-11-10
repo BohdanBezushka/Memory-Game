@@ -17,21 +17,22 @@ let stopWatch = null;
 //Instructions to the player. Instructions can be viewed by pressing the question mark.
 function instructions(){
     document.getElementById("memory-game").style.display = "none";
+    document.getElementById("links").style.display = "none";
     document.getElementById("instructions-game").style.display = "block";
 }
 
 //Press the play button to play.
 function playGame(){
     document.getElementById("memory-game").style.display = "block";
+    document.getElementById("links").style.display = "block";
     document.getElementById("instructions-game").style.display = "none";
 }
 
 //Creation of an array that will be used to appear on the buttons.
-let numbers = [2, 2, 3, 3, 5, 5, 7, 7, 11, 11, 13, 13, 17, 17, 19, 19]
+let numbers = [2, 2, 3, 3, 5, 5, 7, 7, 11, 11, 13, 13, 17, 17, 19, 19];
 
 //The following code allows to have random numbers of "let number".
 numbers = numbers.sort(() => {return Math.random()-0.5});
-console.log(numbers);
 
 //This is the function that allows the button to be turned around so that the player can see the content.
 function popUp(id){
@@ -48,7 +49,7 @@ function popUp(id){
 
     if(uncoveredBottoms === 1){
         buttonOne = document.getElementById(id);
-        firsResult = numbers[id]
+        firsResult = numbers[id];
         buttonOne.innerHTML= firsResult;
 
         //Lock the first button (the player can see it) to unlock the second button.
