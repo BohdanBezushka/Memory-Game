@@ -14,8 +14,20 @@ let timer = 60;
 let startTime = 60;
 let stopWatch = null;
 
+//Instructions to the player. Instructions can be viewed by pressing the question mark.
+function instructions(){
+    document.getElementById("memory-game").style.display = "none";
+    document.getElementById("instructions-game").style.display = "block";
+}
+
+//Press the play button to play.
+function playGame(){
+    document.getElementById("memory-game").style.display = "block";
+    document.getElementById("instructions-game").style.display = "none";
+}
+
 //Creation of an array that will be used to appear on the buttons.
-let numbers = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8]
+let numbers = [2, 2, 3, 3, 5, 5, 7, 7, 11, 11, 13, 13, 17, 17, 19, 19]
 
 //The following code allows to have random numbers of "let number".
 numbers = numbers.sort(() => {return Math.random()-0.5});

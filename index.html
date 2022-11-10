@@ -56,9 +56,21 @@
             <h2 id ="identified" class="player-info"> Identified: 0</h2>
             <h2 id="time" class="player-info">Time: 60 sec.</h2>
             <h2 id="moves" class="player-info">Moves: 0</h2>
-            <h2 id="instructions" class="player-info">?</2>
+            <h2 id="instructions" class="player-info" onclick="instructions()">?</2>
         </div>
     </div>
+
+    <section id="instructions-game" hidden>
+        <h1>Instructions</h1>
+        <ul>
+            <li>You have to match the values.</li>
+            <li>You have 60 seconds to complete the memory game.</li>
+            <li>Try to finish the game with as few moves as possible.</li>
+        </ul>
+
+        <button id="play-game" onclick="playGame()">Play</button>
+
+    </section>
 
     <!--JavaScript file-->
     <script src="assets/js/script.js"></script>
