@@ -135,6 +135,161 @@ button:hover{
 
 /* Media queries */
 
-/* For large to medium screens sizes from 1240px wide and down */
+/* For large to medium-large screens sizes from 1560px wide and down */
+@media screen and (max-width: 1560px){
+    #memory-game{
+        margin: 1% 10% 1% 10%;
+    }
 
+    #title{
+        font-size: 5vw;
+    }
 
+    button{
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .player-info{
+        font-size: 3vw;
+    }
+
+    .social-media li{
+        font-size: 5.5vw;
+    }
+
+    .copyright{
+        font-size: 4vw;
+    }
+}
+
+/* For medium-large to medium screens sizes from 1100px wide and down */
+@media screen and (max-width: 1100px){
+    #memory-game{
+        margin: 1% 5% 1% 5%;
+    }
+
+    #title{
+        font-size: 7vw;
+    }
+
+    button{
+        height: 13vw;
+        width: 13vw;
+        font-size: 7vw;
+    }
+
+    .player-info{
+        font-size: 5vw;
+    }
+
+    .social-media li{
+        font-size: 7vw;
+    }
+
+    .copyright{
+        font-size: 5.5vw;
+    }
+}
+
+/* For medium to medium-small screens sizes from 800px wide and down */
+@media screen and (max-width: 800px){
+    #memory-game{
+        margin: 1%;
+    }
+
+    #title{
+        font-size: 11vw;
+    }
+
+    button{
+        height: 16vw;
+        width: 16vw;
+        font-size: 12vw;
+    }
+
+    #info{
+        display:inline;
+    }
+
+    .player-info{
+        font-size: 7vw;
+    }
+
+    #instructions{
+        font-size: 7vw;
+        height: 7vw;
+        width: 7vw;
+        margin-right: 0;
+        padding: 1%;
+        margin: 2% auto;
+    }
+
+    .social-media li{
+        font-size: 10vw;
+    }
+
+    .copyright{
+        font-size: 6vw;
+    }
+
+    #instructions-game{
+        font-size: 5vw;
+      
+    }
+
+    #play-game{
+        font-size: 8vw;
+    }
+}
+
+/* For medium-small to small screens sizes from 450px wide and down */
+@media screen and (max-width: 450px){
+    #memory-game{
+        margin: 0.5%;
+    }
+
+    #title{
+        font-size: 15vw;
+    }
+
+    button{
+        height: 21.5vw;
+        width: 21.5vw;
+        font-size: 18vw;
+    }
+
+    #info{
+        display:inline;
+    }
+
+    .player-info{
+        font-size: 13vw;
+    }
+
+    #instructions{
+        font-size: 13vw;
+        height: 13vw;
+        width: 13vw;
+        margin-right: 0;
+        padding: 1%;
+        margin: 2% auto;
+    }
+
+    .social-media li{
+        font-size: 13vw;
+    }
+
+    .copyright{
+        font-size: 9vw;
+    }
+
+    #instructions-game{
+        font-size: 8vw;
+      
+    }
+
+    #play-game{
+        font-size: 11vw;
+    }
+}
