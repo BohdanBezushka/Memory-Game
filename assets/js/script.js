@@ -75,11 +75,9 @@ function popUp(id){
         if(firsResult === secondResult){
             uncoveredBottoms= 0;
 
-            
             //If the player has hit the right buttons the "Identified:" counter will increase.
             identities++;
             identified.innerHTML = `Identified: ${identities}`;
-
 
             //Here we notify the player that he/she has completed the challenge if he/she reaches 8 matches.
 

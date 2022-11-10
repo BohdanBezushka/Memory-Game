@@ -8,21 +8,12 @@
 }
 
 body{
+    color: #000000;
     font-family: 'VT323', monospace;
     background: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: linear-gradient(
-    180deg,
-  hsl(197, 63%, 16%) 0%,
-  hsl(192deg 100% 18%) 15%,
-  hsl(189deg 100% 23%) 30%,
-  hsl(185deg 100% 27%) 44%,
-  hsl(179deg 100% 30%) 58%,
-  hsl(173deg 100% 35%) 72%,
-  hsl(167deg 100% 40%) 86%,
-  hsl(156deg 78% 55%) 100%
-);
+    background:#1DE9B6;
 }
 
 /*Style game*/
@@ -31,7 +22,7 @@ body{
     border: 5px solid black;
     margin: 1% 20% 1% 20%;
     text-align: center;
-    background:rgb(240,248,255, 0.33);
+    background:#25252533;
 }
 
 #title{
@@ -56,13 +47,13 @@ button{
     font-weight: bold;
     cursor: pointer;
     border-radius: 10px;
-    color: rgb(15, 52, 67);
+    color:#000000;
     font-size: 4vw;
-    background:hsla(208, 100%, 97%, 0.66);
+    background:#fbfdfef2;
 }
 
 button:hover{
-    background:rgb(51, 230, 158);
+    background:#FFD180;
 }
 
 
@@ -75,12 +66,12 @@ button:hover{
 }
 
 .player-info{
-    font-size: 2vw;
+    font-size: 2.5vw;
     padding: 3%;
 }
 
 #instructions{
-    background: hsla(208, 100%, 97%, 0.66);
+    background: #fbfdfef2;
     font-size: 4vw;
     height: 4vw;
     width: 4vw;
@@ -91,7 +82,7 @@ button:hover{
 }
 
 #instructions:hover{
-    background:rgb(51, 230, 158);
+    background:#FFD180;
 }
 
 #instructions-game{
@@ -118,11 +109,11 @@ button:hover{
 }
 
 .social-media i{
-    color:hsl(197, 63%, 16%);
+    color:#f3f9fb;
 }
 
 .social-media i:hover{
-    color:rgb(51, 230, 158);
+    color: #FFD180;
 }
 
 .copyright{
@@ -135,64 +126,40 @@ button:hover{
 
 /* Media queries */
 
-/* For large to medium-large screens sizes from 1560px wide and down */
-@media screen and (max-width: 1560px){
-    #memory-game{
-        margin: 1% 10% 1% 10%;
-    }
-
-    #title{
-        font-size: 5vw;
-    }
-
-    button{
-        height: 10vw;
-        width: 10vw;
-    }
-
-    .player-info{
-        font-size: 3vw;
-    }
-
-    .social-media li{
-        font-size: 5.5vw;
-    }
-
-    .copyright{
-        font-size: 4vw;
-    }
-}
-
-/* For medium-large to medium screens sizes from 1100px wide and down */
+/* For large to medium screens sizes from 1100px wide and down */
 @media screen and (max-width: 1100px){
     #memory-game{
         margin: 1% 5% 1% 5%;
     }
 
     #title{
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     button{
-        height: 13vw;
-        width: 13vw;
+        height: 10vw;
+        width: 10vw;
         font-size: 7vw;
     }
 
     .player-info{
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .social-media li{
-        font-size: 7vw;
+        font-size: 5vw;
     }
 
     .copyright{
-        font-size: 5.5vw;
+        font-size: 4.5vw;
+    }
+
+    #play-game{
+        font-size: 6vw;
     }
 }
 
-/* For medium to medium-small screens sizes from 800px wide and down */
+/* For medium to small screens sizes from 800px wide and down */
 @media screen and (max-width: 800px){
     #memory-game{
         margin: 1%;
@@ -243,7 +210,7 @@ button:hover{
     }
 }
 
-/* For medium-small to small screens sizes from 450px wide and down */
+/* Small screens sizes from 450px wide and down */
 @media screen and (max-width: 450px){
     #memory-game{
         margin: 0.5%;
