@@ -31,6 +31,18 @@ body{
     opacity: 1;
 }
 
+#refresh{
+    color:#f3f9fb;
+    font-size: 3vw;
+    margin-left: 5%;
+    padding: 1%;
+    cursor: pointer;
+}
+
+#refresh:hover{
+    color: #FFD180;
+}
+
 table{
     text-align: center;
     margin: auto;
@@ -136,6 +148,10 @@ button:hover{
         font-size: 6vw;
     }
 
+    #refresh{
+        font-size: 4.5vw;
+    }
+
     button{
         height: 10vw;
         width: 10vw;
@@ -167,6 +183,10 @@ button:hover{
 
     #title{
         font-size: 11vw;
+    }
+
+    #refresh{
+        font-size: 6vw;
     }
 
     button{
@@ -218,6 +238,10 @@ button:hover{
 
     #title{
         font-size: 15vw;
+    }
+
+    #refresh{
+        font-size: 9vw;
     }
 
     button{
