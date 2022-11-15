@@ -14,11 +14,14 @@ let timer = 60;
 let startTime = 60;
 let stopWatch = null;
 
+let intervalo
+
 //Instructions to the player. Instructions can be viewed by pressing the question mark.
 function instructions(){
     document.getElementById("memory-game").style.display = "none";
     document.getElementById("links").style.display = "none";
     document.getElementById("instructions-game").style.display = "block";
+    clearInterval(stopWatch);
 }
 
 //Press the play button to play.
@@ -82,7 +85,7 @@ function popUp(id){
             //Here we notify the player that he/she has completed the challenge if he/she reaches 8 matches.
 
             //Perfect result.
-            if(identities === 8 && movements == 8){
+            if(identities === 8 && movements <= 16){
                 moves.innerHTML = `PERFECT!`;
                 identified.innerHTML = `CHALLENGE COMPLETED!`;
                 time.innerHTML = `YOU MADE IT IN ${startTime - timer}!`;
@@ -91,7 +94,7 @@ function popUp(id){
                 clearInterval(stopWatch);
 
             //Standard result.
-            }if(identities === 8 && movements > 8){
+            }if(identities === 8 && movements > 16){
                 moves.innerHTML = `You could do better.`;
                 identified.innerHTML = `Challenge completed.`;
                 time.innerHTML = `You made it in ${startTime - timer}`;
@@ -122,6 +125,8 @@ function sandWatch(){
 
         //The "if" will work so that the time stops at 0 and when that happens, all buttons will be displayed and locked.
         if (timer === 0){
+            moves.innerHTML = `Try again.`;
+            identified.innerHTML = `Challenge not completed.`;
             clearInterval(stopWatch);
             seeAllButtons();
         }
@@ -137,7 +142,7 @@ function seeAllButtons(){
     }
 }
 
-
+//If the player presses the symbol he can play again.
 function playAgain(){
     window.location.reload(document.getElementById("refresh"));
 }
