@@ -29,6 +29,7 @@ function playGame(){
     document.getElementById("memory-game").style.display = "block";
     document.getElementById("links").style.display = "block";
     document.getElementById("instructions-game").style.display = "none";
+    setInterval(stopWatch);
 }
 
 //Creation of an array that will be used to appear on the buttons.
