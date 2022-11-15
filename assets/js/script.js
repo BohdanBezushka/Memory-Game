@@ -136,3 +136,8 @@ function seeAllButtons(){
         buttons.disabled = true;
     }
 }
+
+
+function playAgain(){
+    window.location.reload(document.getElementById("refresh"));
+}
