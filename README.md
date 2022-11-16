@@ -94,10 +94,12 @@ In the footer, users can click on links to GitHub and Linkedin. Once these icons
 *Start of the game.*
 
 ![Captura de pantalla (374)](https://user-images.githubusercontent.com/94321555/202084287-0ab12d90-b292-4263-8194-092ad8fdde61.png)
+
 *End game*
 
 - Instructions button:
     - The player can click on it and see the instructions for the game.
+
 ![Captura de pantalla (375)](https://user-images.githubusercontent.com/94321555/202084405-8b5159d1-b6f9-4a56-9546-45a04250260e.png)
 
 - Instructions page:
