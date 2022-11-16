@@ -1,108 +1,196 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Bohdan Bezushka Perepelytsia,
+# **Memory Game** ⏳
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[*Live link to website.*](https://bohdanbezushka.github.io/Memory-Game/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Memory Game is a game where the user has to match cards with the same value. The player has only 60 seconds to match all the cards. The aim of the game is to improve the user's memory.
 
-## Gitpod Reminders
+The user can see the time he/she has to complete the game, the total number of moves made and the number of matches achieved. There is also a button with a "?" sign where he/she can see the instructions.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Captura de pantalla (392)](https://user-images.githubusercontent.com/94321555/202083364-35a58a11-3d0e-4886-8d6e-203aab4169bc.png)
 
-`python3 -m http.server`
+## Contents
 
-A blue button should appear to click: _Make Public_,
+* [User Experience - UX](#User-Experience---UX)
+  * [User Stories](#User-Stories)
+  * [Site Owners Goals](#Site-Owners-Goals)
+* [Design](#Design)
+  * [Colour Scheme](#Colour-Scheme)
+  * [Typography](#Typography)
+  * [Interactive Links](#Interactive-Links)
+* [Features](#Features)
+  * [Features Left to Implement](#Features-Left-to-Implement)
+* [Testing](#Testing)
+  * [Performance Testing](#Performance-Testing)
+* [Validator Testing](#Validator-Testing)
+* [Bugs](#Bugs) 
+* [Unfixed Bugs](#Unfixed-Bugs)
+* [Technologies Used](#Technologies-Used)
+* [Deployment of This Project](#Deployment-of-This-Project)
+* [Credits](#Credits)
+  * [Information Resources](#Information-Resources)
+  * [Media](#Media)
+* [Acknowledgements](#Acknowledgements)
 
-Another blue button should appear to click: _Open Browser_.
+## User experience - UX
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The website has 2 pages. The main one is where the player can complete the challenge and the second one is to view the game instructions.
 
-A blue button should appear to click: _Make Public_,
+### User Stories
 
-Another blue button should appear to click: _Open Browser_.
+- As a user, I want to be able to see the name of the site clearly at the top of the page.
+- As a user, I want to be able to easily access and exit the game instructions.
+- As a user, I want to be able to see the time remaining.
+- As a user, I want to be able to see the total number of matches completed.
+- As a user, I want to be able to see the total number of buttons uncovered.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Site Owners Goals
 
-To log into the Heroku toolbelt CLI:
+- As a creator, I want the user to have a simple interface.
+- As a creator, I want the user to have information below the play area.
+- As a creator, I want the user to be able to have an instruction section of the game.
+- As a creator, I want the user to be able to contact the creator via Linkedin or see other projects via GitHub.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Design
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Colour Scheme
+![nn](https://user-images.githubusercontent.com/94321555/202083607-f5ec59f2-d0e6-4639-9f12-4674228b2b4a.png)
 
-------
+- The colour `#000000` is mainly used for text and borders.
+- The colour `#FAFAFAFA` is mainly used for the background of the play area buttons, instruction button, play button and the GitHub and Linkedin icons.
+- The colour `#1DE9B6` is mainly used for the background of the body.
+- The colour `#FFD180` is mainly used for the hover function on the play area buttons, the instructions button, play button and the GitHub and Linkedin icons.
 
-## Release History
+### Typography
+I used Google Fonts to select and import the VT323 font for all site text. In case of error, the second font family would be Monospace.
+![Captura de pantalla (361)](https://user-images.githubusercontent.com/94321555/202083746-3d5ed325-ed3b-4bf7-b9ef-901516fe27a1.png)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Interactive Links
+In the footer, users can click on links to GitHub and Linkedin. Once these icons are clicked, they open in a new tab.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Features
+- Favicon:
+    - The favicon of the browser tab contains a simple image of two cards and shows the user what the game is about.
+![Captura de pantalla (363)](https://user-images.githubusercontent.com/94321555/202083851-6e4cf7c4-646f-4388-9f70-2faedd839ef7.png)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Logo:
+    - The logo appears at the top of the page and shows the user the name of the game.
+    - Next to the logo there is a button that allows the user to play again.
+![Captura de pantalla (388)](https://user-images.githubusercontent.com/94321555/202083931-60b50415-6020-4c90-bf67-ca2f20126264.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- Game Area:
+    - In each game the numbers appear randomly. The player must match the buttons by uncovering them.
+![Captura de pantalla (370)](https://user-images.githubusercontent.com/94321555/202084015-3bcef0a6-eeb0-4beb-a9f9-e689063a8ccf.png)
+*This is the playing area at the start of the game.*
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![Captura de pantalla (368)](https://user-images.githubusercontent.com/94321555/202084101-03922211-cca3-4103-971d-cac338101a4d.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+*This is when the player has completed all combinations.*
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Game Data:
+    - This part tells the player how he is doing. It shows the number of completed combinations, the time remaining and the number of uncoverings made.
+    - At the end of the game, a response will be displayed based on the user's skill and the time taken to complete the game.
+![Captura de pantalla (372)](https://user-images.githubusercontent.com/94321555/202084231-62586911-45d7-4f39-a8aa-b5b9b2f3bd13.png)
+*Start of the game.*
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![Captura de pantalla (374)](https://user-images.githubusercontent.com/94321555/202084287-0ab12d90-b292-4263-8194-092ad8fdde61.png)
+*End game*
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Instructions button:
+    - The player can click on it and see the instructions for the game.
+![Captura de pantalla (375)](https://user-images.githubusercontent.com/94321555/202084405-8b5159d1-b6f9-4a56-9546-45a04250260e.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Instructions page:
+    - The player can return to the playing area by clicking the "Play" button.
+![Captura de pantalla (394)](https://user-images.githubusercontent.com/94321555/202084494-1468047c-4221-49e9-bb08-1ea4a9cdfa5a.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Footer:
+    - The footer shows that I have developed the site and a link to my Github and Linkedin which open in a new tab.
+![Captura de pantalla (390)](https://user-images.githubusercontent.com/94321555/202084615-3336f9d4-8a72-4f92-8db3-3df8076e150d.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Features Left to Implement
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Create easy, medium and difficult levels. It would be interesting to create more levels with higher difficulty. The idea would be to add images in the middle level and reduce the time to complete it. And in the difficult level I would add very similar shapes with more buttons.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- Add a page where the user can see a history of their results at different levels.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- It would be interesting to add sounds to the user's actions; when opening a button, when matching buttons, when not matching buttons and a background song while the user plays.
 
-------
+## Testing
 
-## FAQ about the uptime script
+- The website has been successfully tested on my own laptop on the following browsers:
+![image](https://user-images.githubusercontent.com/94321555/202084695-1b884829-6d36-49a0-bd11-119aeec2d6bd.png)
 
-**Why have you added this script?**
+- The game has been tested on more than one occasion by myself and more than 4 other users. The play area works correctly and shows the results to the user at the right time.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- The links work correctly and open in a new tab.
 
-**How will this affect me?**
+### Performance Testing
+The website was tested for performance using the Lighthouse feature in Google Chrome's Developer Tools:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+- Desktop:
+![Captura de pantalla (396)](https://user-images.githubusercontent.com/94321555/202084826-3a253c07-e20c-4bac-8d54-b8c1a8f0b0b2.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- Mobile:
+![Captura de pantalla (398)](https://user-images.githubusercontent.com/94321555/202084882-32946281-166f-4194-b0a4-603902639316.png)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Validator Testing
+- HTML
+    - No errors were returned through the official [*W3C HTML Validator.*](https://validator.w3.org/nu/?doc=https%3A%2F%2Fbohdanbezushka.github.io%2FMemory-Game%2F)
+![Captura de pantalla (400)](https://user-images.githubusercontent.com/94321555/202084954-b92487b5-5627-4d77-85c4-56c17439567b.png)
 
-**So….?**
+- CSS
+    - No errors were returned through the official [*W3C CSS Validator (Jigsaw).*](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbohdanbezushka.github.io%2FMemory-Game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+![Captura de pantalla (402)](https://user-images.githubusercontent.com/94321555/202085072-08fb923d-fcb9-4d8d-af0f-47fdfdec3ff8.png)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- JavaScript
+    - No errors were returned after passing my code through [*JSHint JavaScript Validator.*](https://jshint.com/)
+![Captura de pantalla (406)](https://user-images.githubusercontent.com/94321555/202085230-0c4537c7-dfc5-42bf-8499-83b9a718a98a.png)
 
-**Can I opt out?**
+## Bugs
+- I had to change the background colour because it gave low results in the LightHouse test. This is a screenshot of the project before changing the background:
+![Captura de pantalla (407)](https://user-images.githubusercontent.com/94321555/202085288-d73ea7f1-f8a0-453e-a279-6156a67a8f05.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+- I had to correct three errors that appeared in the W3C HTML Validator test:
+![Captura de pantalla (408)](https://user-images.githubusercontent.com/94321555/202085338-c74191d5-ff84-44ed-b121-0ceb60dffcf0.png)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Unfixed Bugs
+No unficed bugs.
 
-**Anything more?**
+## Technologies Used
+The following is a list of the technologies I used on this project:
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+1. *HTML5* was used to create the structure of the site.
+2. *CSS3* was used to add styling to the site.
+3. *JavaScript* was used to add functionality to the game.
+4. [*Google Fonts*](https://fonts.google.com/?query=VT323+) was used to import the VT323 font for use on style.css.
+5. *Github* was used to store the project's code after being pushed from Git.
+6. *Git* was used for version control through the Gitpod terminal.
+7. *Gitpod* terminal was used to commit my code using Git and push it to Github.
+8. [*Font Awesome*](https://fontawesome.com/) are used as an icons for user UX purposes.
+9. I have used [*Readme.so*](https://readme.so/en) to create the README file.
 
----
+## Deployment of this project
+The website development was created in the "main" branch. This branch was deployed using GitHub Pages.
 
-Happy coding!
+- In the GitHub repository, navigate to the Settings tab.
+- From the source section drop-down menu, select the Main Branch, then click "Save".
+- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+[*The live link.*](https://bohdanbezushka.github.io/Memory-Game/)
+
+## Credits
+### Information Resources
+- The project has been inspired by [*Memory Card Game - JavaScript Tutorial*](https://youtu.be/ZniVgo8U7ek) and by [*How to Code a Card Matching Game.*](https://youtu.be/28VfzEiJgy4)
+- The following media have been read to understand how the code should work [*How to program a card matching game*](https://www.ncsc.gov.uk/static-assets/documents/ECW21-CGI-Card-Matching-Instructions.pdf) and [*Creating a memory game with JavaScript.*](https://dev.to/fakorededamilola/create-a-memory-game-with-js-1l9j)
+- I used [*Stack Overflow*](https://stackoverflow.com/), [*W3Schools*](https://www.w3schools.com/jsref/met_win_clearinterval.asp), [*MDN*](https://developer.mozilla.org/en-US/) and the Code Institute's slack group when I got stuck.
+
+### Media  
+- The Favicon image belongs to [*Freepik*](https://www.freepik.com/) and has been generated by [*Favicon io*](https://favicon.io/favicon-converter/).
+- To find colours I have used [*HTML Color Codes.*](https://htmlcolorcodes.com/)
+- To create the colour palette I used [*Coolors.*](https://coolors.co/000000-fafafa-1de9b6-ffd180)
+
+## Acknowledgements
+Special thanks to my mentor [*Mitko Bachvarov*](https://www.linkedin.com/in/mitko-bachvarov-40b50776/) and my colleagues at the [*Code Institute.*](https://codeinstitute.net/ie/)
+
+
