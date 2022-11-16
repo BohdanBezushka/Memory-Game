@@ -29,7 +29,7 @@ function playGame(){
     document.getElementById("memory-game").style.display = "block";
     document.getElementById("links").style.display = "block";
     document.getElementById("instructions-game").style.display = "none";
-    setInterval(stopWatch);
+    setTimeout(sandWatch());
 }
 
 //Creation of an array that will be used to appear on the buttons.
@@ -123,6 +123,7 @@ function sandWatch(){
    stopWatch = setInterval(() => {
         timer --;
         time.innerHTML = `Time: ${timer} sec.`;
+
 
         //The "if" will work so that the time stops at 0 and when that happens, all buttons will be displayed and locked.
         if (timer === 0){
