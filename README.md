@@ -156,8 +156,19 @@ The website was tested for performance using the Lighthouse feature in Google Ch
 - I had to correct three errors that appeared in the W3C HTML Validator test:
 ![Captura de pantalla (408)](https://user-images.githubusercontent.com/94321555/202085338-c74191d5-ff84-44ed-b121-0ceb60dffcf0.png)
 
+- The following code caused that when the user pressed the "instructions" button the time did not stop and when the user pressed the "play" button the time was counting down seconds faster and did not stop, giving a negative time result. The solution was to apply a setTimeout to the sandWatch() function.
+
+![image](https://user-images.githubusercontent.com/94321555/203163574-cf96b878-3e31-4f1c-a12a-020b3b6564ea.png)
+*Before.*
+
+![Captura de pantalla (424)](https://user-images.githubusercontent.com/94321555/203163743-9154a386-3e6a-49d6-85ab-962cc136aacd.png)
+Bug.
+
+![image](https://user-images.githubusercontent.com/94321555/203164335-372a5bd4-74eb-46be-b468-ed25a2b4d9dd.png)*After*
+*After*
+
 ## Unfixed Bugs
-No unficed bugs.
+No unfixed bugs.
 
 ## Technologies Used
 The following is a list of the technologies I used on this project:
