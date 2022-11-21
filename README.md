@@ -162,10 +162,10 @@ The website was tested for performance using the Lighthouse feature in Google Ch
 *Before.*
 
 ![Captura de pantalla (424)](https://user-images.githubusercontent.com/94321555/203163743-9154a386-3e6a-49d6-85ab-962cc136aacd.png)
-Bug.
+*Bug.*
 
-![image](https://user-images.githubusercontent.com/94321555/203164335-372a5bd4-74eb-46be-b468-ed25a2b4d9dd.png)*After*
-*After*
+![image](https://user-images.githubusercontent.com/94321555/203164335-372a5bd4-74eb-46be-b468-ed25a2b4d9dd.png)
+*After.*
 
 ## Unfixed Bugs
 No unfixed bugs.
@@ -205,5 +205,3 @@ The website development was created in the "main" branch. This branch was deploy
 
 ## Acknowledgements
 Special thanks to my mentor [*Mitko Bachvarov*](https://www.linkedin.com/in/mitko-bachvarov-40b50776/) and my colleagues at the [*Code Institute.*](https://codeinstitute.net/ie/)
-
-
